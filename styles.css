@@ -1,0 +1,284 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5ebd0;
+
+}
+
+
+.content {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 800px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.banner-content {
+    width: 800px;
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.intro h1 {
+    font-size: 30pt;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.intro h2 {
+    font-size: 20pt;
+    font-weight: 300;
+    margin: 0px;
+    font-variant: small-caps;
+}
+
+.intro .bottom-title {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+.content p {
+    font-size: 13pt;
+}
+
+.project-zone {
+    margin: 0px;
+    width: 100vw;
+    padding: 10px 0px;
+    min-height: 80vh;
+    background-color: lightgray;
+
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black
+
+}
+
+.project-zone.white {
+    color: white;
+}
+
+.images-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    max-width: 90vw;
+}
+
+.images-list img {
+    margin: 5px;
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: gray;
+    align-content: start;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.images-list img:hover {
+    filter: brightness(0.8);
+}
+
+.action-button {
+    background-color: #FFFFFF00;
+    color: black;
+
+    border-radius: 4px;
+    
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 12px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    width: fit-content;
+    margin: 3px 0px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-zone.white .action-button {
+    color: white;
+    border: 3px solid white;
+
+}
+
+.action-button.white {
+    color: white;
+    border: 3px solid white;
+
+}
+
+.project-zone.white .images-list img {
+    border: 1px solid white;
+}
+
+.action-button > i {
+    font-size: 18pt;
+    margin-right: 10px;
+}
+
+.action-button:hover {
+    background-color: black;
+    color: white;    
+    
+}
+
+.project-zone.white .action-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.action-button.white:hover {
+    background-color: white;
+    color: black;
+}
+
+.banner {
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    background-color: inherit;
+    z-index: 10;            
+}
+
+.banner h2 {
+    width: fit-content;
+    max-width: 60%;
+    font-weight: 800;
+}
+
+.techno {
+    display: flex;
+    align-items: center;
+    font-size: 25pt;
+}
+
+.techno > i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social > button {
+    margin-right: 25px;
+}
+
+.social > i, a:has(>i) {
+    font-size: 30pt;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #000;
+}
+
+.social > i:hover, a:hover {
+    color: gray;
+}
+
+i {
+    display: block;
+}
+
+.popup-image {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000AA;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.popup-image .popup-content {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.popup-image img {
+    min-width: 70vw;
+    max-width: 70vw;
+}
+
+.popup-image p {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    text-align: left;
+    font-size: 25pt;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    width: 100vw;
+}
+
+.popup-fadeIn {
+    animation: fadeIn 0.2s;
+}
+
+.popup-fadeOut {
+    animation: fadeOut 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <meta charset="UTF-8">  
+        <title>Quentin LACOMBE - Développeur logiciel Grenoble</title>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@4"></script>    
+        <script src="https://kit.fontawesome.com/5c4259250b.js" crossorigin="anonymous"></script> 
+        <script src="./scripts.js"></script>
+    </head>
+
+
+    <body>
+        <div class="content intro">
+            <h1>Quentin LACOMBE</h1>
+            <h2>développeur logiciel</h2>
+            <p>
+                Bonjour et bienvenue sur mon Portfolio ! Ici on va surtout parler de moi et de mes projets.
+                Alors, qui suis je ? Je suis actuellement étudiant en dernière année de BUT Informatique en alternance dans l'entreprise Microoled.
+                Qu'est ce que je fais ? Je suis chargé du développement d'une application web de type intranet permettant d'assurer la traçabilité des micro écrans produits
+                par Microoled.
+            </p>
+
+            <div class="social">
+                <a href="./CV-quentin-lacombe.pdf" target="_blank"><button class="action-button"><i class="devicon-readthedocs-original"></i>TÉLÉCHARGER MON CV</button></a>
+                <a href="https://www.linkedin.com/in/quentin-lacombe" target="_blank"><i class="devicon-linkedin-plain" data-tippy="Ma page Linkedin"></i></a>
+                <a href="https://github.com/Quentlac" target="_blank"><i class="devicon-github-original" data-tippy="Mon profil Github"></i></a>
+            </div>
+
+            <h2 class="bottom-title">MES PROJETS <i class="fa-solid fa-chevron-down"></i></h2>
+        </div>
+
+        <div class="project-zone white" style="background-color: #2197b1;">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>APPLICATION RÉSERVATION EN LIGNE DE STAGE DE VOILE</h2>
+                    <div class="techno">
+                        <i class="devicon-react-original" data-tippy="React"></i>
+                        <i class="devicon-nodejs-plain-wordmark" data-tippy="NodeJS"></i>
+                        <i class="devicon-postgresql-plain" data-tippy="PostgreSQL"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="content"> 
+                <p>
+                    Développement d'une application web pour le club de voile YCBL permettant aux clients du club de réserver un stage pour l'été en ligne.
+                    L'application intègre une partie réservation dédié aux clients ainsi qu'une partie administration pour les employés du club afin de leur permettre de gérer les commandes et les offres proposées.
+                </p>
+                <button class="action-button"><i class="fa-solid fa-link"></i> VOIR EN LIGNE</button>
+            </div>
+            <div class="images-list">
+                <img src="./images/ycbl1.png" data-description="Le client commence par choisir les semaines où il est disponible pour orienter la recherche de stages.">
+                <img src="./images/ycbl2.png" data-description="Affichage des stages sous forme de cartes avec toutes les informations nécessaires.">
+                <img src="./images/ycbl3.png" data-description="Interface d'administration présentant toutes les commandes des clients.">
+                <img src="./images/ycbl4.png" data-description="Interface d'administration permettant de visualiser une commande et d'effectuer des actions dessus.">
+            </div>
+            <div class="content">
+
+                <p>
+                    Pour le développement de cette application, j'ai tout d'abord étudiés les besoins nécessaires afin de rendre l'expérience utilisateur la plus agréable possible. D'un point de vue technique, il s'agit d'une application client / serveur avec une base de données PostgreSQL.
+                    Les technologies utilisées sont React pour le front-end, NodeJS pour le back-end.
+                </p>
+                <p>
+                    J'ai également mis en place un système de paiement en ligne pour permettre aux clients de payer leur réservation en ligne. J'ai pour cela utilisé
+                    l'API ETransaction proposé par la banque Crédit Agricole.
+                </p>
+            
+                <p>
+                    L'application possède un système d'envoi de mails automatiques et de génération de facture afin de les envoyer aux clients après leur réservation.
+                </p>
+                <p>
+                    Cette application intègre un système de stock et permet de moduler le nombre de places disponibles pour chaque stage et pour chaque semaines. Il est possible de créer des packages pour
+                    ajouter des options aux stages. Cela faisait partis des attentes du club de voile pour lequel j'ai travaillé.
+                </p>
+
+                <p>Le site est aujourd'hui activement utilisé par le club de voile afin de remplir ses stages pour la saison estivale. Vous pouvez accéder au site en cliquant sur le bouton ci-dessus.</p>
+
+            </div>
+
+        
+            
+        </div>
+
+
+        <div class="project-zone white" style="background-color: rgb(179, 60, 6);">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>PROJET GAME JAM : GRAVITY ESCAPE</h2>
+                    <div class="techno">
+                        <i class="devicon-python-plain" data-tippy="Python"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                
+                <p>
+                    Réalisation d'une Game Jam en Python organisé par l'IUT2 de Grenoble au sein de la promo de 3ème année de BUT Informatique. L'objectif était de créer un jeu vidéo en Python
+                    avec la bibliothèque pygame en 1 semaine par équipe de 4 personnes. Le thème imposé était <i>Maître de la gravité, l'histoire d'un robot.</i>
+                </p>
+                <p>
+                    Nous avons donc réalisé le jeu que nous avons nommé "Gravity Escape".
+                    Il s'agit d'un jeu vidéo de type platforme où le joueur incarne un robot qui doit réussir différents niveau. Pour y parvenir il dispose d'un canon qui lui permet de tirer des projectiles pour modifier la gravité de certains blocs. 
+                </p>
+                <button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button>
+
+            </div>
+
+            <div class="images-list">
+                <img src="./images/gravityescape1.png">
+                <img src="./images/gravityescape2.png">
+                <img src="./images/gravityescape3.png">
+            </div>
+
+            <div class="content">
+
+                <p>J'étais chargé du développement de la physique du jeu. Je me suis donc occupé de créer le moteur physique en utilisant une approche orienté objet afin de faciliter le développement.</p>
+
+                <p>Afin de travailler à plusieurs sur le projet, j'ai mis en place un dépôt Github permettant de collaborer sur le projet</p>
+
+                <p>Ce projet nous a valu la seconde place à la Gamejam 2023 organisé par l'IUT.</p>
+                
+            </div>
+        </div>
+
+        <div class="project-zone white" style="background-color: #993366">
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>CHEERLAND</h2>
+                    <div class="techno">
+                        <i class="devicon-react-original" data-tippy="React Native"></i>
+                        <i class="devicon-php-plain" data-tippy="PHP"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                
+                <p>
+                    Lors de ma première année de BUT Informatique, j'ai participé à une Game Jam. Le but était de créer un jeu vidéo en 48h.
+                    J'ai donc travaillé en équipe pour créer un jeu de type "Tower Defense" nommé "The Last Stand". 
+                    J'ai principalement travaillé sur la partie développement du jeu.
+                </p>
+
+                <button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button>
+                
+            </div>
+
+            <div class="images-list">
+                <img src="images/gamejam1.png" alt="gamejam1" width="200px">
+                <img src="images/gamejam2.png" alt="gamejam2" width="200px">
+                <img src="images/gamejam3.png" alt="gamejam3" width="200px">
+            </div>
+
+        </div>
+
+
+        <div class="popup-image" style="display: none;">
+            <div class="popup-content">
+                <img src="images/ycbl3.png">
+                <p><span>Ceci est une description de l'image</span>
+                <button class="action-button white" id="popup-close" style="margin-top: 20px;">RETOUR</button>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Quentin LACOMBE - 2024 © Copyright tout droit réservé</p>
+        </footer>
+    </body>
+</html>
