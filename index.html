@@ -11,13 +11,14 @@
         <script src="https://unpkg.com/popper.js@1"></script>
         <script src="https://unpkg.com/tippy.js@4"></script>    
         <script src="https://kit.fontawesome.com/5c4259250b.js" crossorigin="anonymous"></script> 
-        <script src="./scripts.js"></script>
+        <script src="./main.js"></script>
     </head>
 
 
     <body>
         <div class="content intro">
-            <h1>Quentin LACOMBE</h1>
+            <img src="./images/profil.png" alt="Photo de Quentin LACOMBE" class="photo-profil">
+            <h1>QUENTIN LACOMBE</h1>
             <h2>développeur logiciel</h2>
             <p>
                 Bonjour et bienvenue sur mon Portfolio ! Ici on va surtout parler de moi et de mes projets.
@@ -27,7 +28,7 @@
             </p>
 
             <div class="social">
-                <a href="./CV-quentin-lacombe.pdf" target="_blank"><button class="action-button"><i class="devicon-readthedocs-original"></i>TÉLÉCHARGER MON CV</button></a>
+                <a href="./CV-quentin-lacombe.pdf" target="_blank"><button class="action-button"><i class="devicon-readthedocs-original"></i>VOIR MON CV</button></a>
                 <a href="https://www.linkedin.com/in/quentin-lacombe" target="_blank"><i class="devicon-linkedin-plain" data-tippy="Ma page Linkedin"></i></a>
                 <a href="https://github.com/Quentlac" target="_blank"><i class="devicon-github-original" data-tippy="Mon profil Github"></i></a>
             </div>
@@ -51,7 +52,7 @@
                     Développement d'une application web pour le club de voile YCBL permettant aux clients du club de réserver un stage pour l'été en ligne.
                     L'application intègre une partie réservation dédié aux clients ainsi qu'une partie administration pour les employés du club afin de leur permettre de gérer les commandes et les offres proposées.
                 </p>
-                <button class="action-button"><i class="fa-solid fa-link"></i> VOIR EN LIGNE</button>
+                <a href="https://ycbl-shop.devistorm.fr" target="_blank"><button class="action-button"><i class="fa-solid fa-link"></i> VOIR EN LIGNE</button></a>
             </div>
             <div class="images-list">
                 <img src="./images/ycbl1.png" data-description="Le client commence par choisir les semaines où il est disponible pour orienter la recherche de stages.">
@@ -106,8 +107,7 @@
                     Nous avons donc réalisé le jeu que nous avons nommé "Gravity Escape".
                     Il s'agit d'un jeu vidéo de type platforme où le joueur incarne un robot qui doit réussir différents niveau. Pour y parvenir il dispose d'un canon qui lui permet de tirer des projectiles pour modifier la gravité de certains blocs. 
                 </p>
-                <button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button>
-
+                <a href="https://github.com/Quentlac/GravityEscape" target="_blank"><button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button></a>
             </div>
 
             <div class="images-list">
@@ -130,7 +130,7 @@
         <div class="project-zone white" style="background-color: #993366">
             <div class="banner">
                 <div class="banner-content">
-                    <h2>CHEERLAND</h2>
+                    <h2>RÉSEAU SOCIAL : CHEERLAND</h2>
                     <div class="techno">
                         <i class="devicon-react-original" data-tippy="React Native"></i>
                         <i class="devicon-php-plain" data-tippy="PHP"></i>
@@ -140,19 +140,33 @@
             <div class="content">
                 
                 <p>
-                    Lors de ma première année de BUT Informatique, j'ai participé à une Game Jam. Le but était de créer un jeu vidéo en 48h.
-                    J'ai donc travaillé en équipe pour créer un jeu de type "Tower Defense" nommé "The Last Stand". 
-                    J'ai principalement travaillé sur la partie développement du jeu.
+                    Dans le cadre d'un projet personnel, j'ai réalisé une application mobile de type réseau social nommé "Cheerland". L'objectif était de créer une application permettant de partager du
+                    contenu de manière innovante et originale. Le principe consiste en une map infinie sur laquelle les utilisateurs peuvent se déplacer
+                    un peu comme sur Google Maps. Cette "map" est de base vierge et n'est qu'une grille vide. Les utilisateurs peuvent y ajouter des éléments comme des messages ou même des photos. Les autres utilisateurs peuvent alors voir ces éléments en se déplaçant sur la map et y réagir directement.
                 </p>
 
-                <button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button>
+                <a href="https://github.com/Quentlac/CheerlandApp" target="_blank"><button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button></a>
                 
             </div>
 
             <div class="images-list">
-                <img src="images/gamejam1.png" alt="gamejam1" width="200px">
-                <img src="images/gamejam2.png" alt="gamejam2" width="200px">
-                <img src="images/gamejam3.png" alt="gamejam3" width="200px">
+                <img class="portrait" src="images/cheerland1.png">
+                <img class="portrait" src="images/cheerland2.png">
+                <img class="portrait" src="images/cheerland3.png">
+                <img class="portrait" src="images/cheerland5.png">
+                <img class="portrait" src="images/cheerland4.png">
+
+            </div>
+
+            <div class="content">
+                <p>L'application mobile était conçu à la fois pour Android et iOS grâce à la technologie React Native. Pour le côté backend, j'ai
+                    utilisé PHP pour créer une API avec laquelle l'application communique pour récupérer les données à afficher sur la map.
+                </p>
+
+                <p>
+                    J'ai également mis en place un système de notifications push pour informer les utilisateurs des réponses d'autres utilisateurs à leur posts (nommé cheers). Pour cela, j'ai utlisé le
+                    framework expo pour React Native qui permet de gérer les notifications push.
+                </p>
             </div>
 
         </div>

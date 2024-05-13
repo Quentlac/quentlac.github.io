@@ -3,7 +3,28 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #f5ebd0;
+    max-width: 100vw;
+    overflow-x: hidden;
 
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -30,11 +51,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 130px;
+    padding-top: 50px;
 }
 
 .intro h1 {
-    font-size: 30pt;
+    font-size: 27pt;
     font-weight: bold;
     margin: 0px;
 }
@@ -97,6 +119,11 @@ body {
     cursor: pointer;
     transition: 0.2s;
     border-radius: 4px;
+}
+
+.images-list img.portrait {
+    width: 300px;
+    height: 500px;
 }
 
 .images-list img:hover {
@@ -235,8 +262,12 @@ i {
 }
 
 .popup-image img {
-    min-width: 70vw;
+    width: 70vw;
     max-width: 70vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: #00000066;
 }
 
 .popup-image p {
@@ -263,6 +294,13 @@ footer {
 
 .popup-fadeOut {
     animation: fadeOut 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+    .popup-image .popup-content {
+        flex-direction: column;
+    }
+    
 }
 
 @keyframes fadeIn {
