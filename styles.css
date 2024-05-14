@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0px;
@@ -68,11 +72,35 @@ body {
     font-variant: small-caps;
 }
 
-.intro .bottom-title {
+.intro .bottom-banner {
     position: absolute;
     bottom: 0px;
     padding-bottom: 10px;
     font-weight: normal;
+
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.projects-dot {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.projects-dot > div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.projects-dot > div:hover {
+    transform: scale(1.1);
 }
 
 .content p {
@@ -149,6 +177,8 @@ body {
 }
 
 a {
+    display: block;
+    width: fit-content;
     text-decoration: none;
 }
 
@@ -295,6 +325,47 @@ footer {
 .popup-fadeOut {
     animation: fadeOut 0.2s;
 }
+
+
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFFFFF77;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 10px;
+    font-size: 20pt;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 15;
+    box-shadow: 0px 0px 10px 5px #00000022;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    transition: right 0.2s;
+}
+
+.go-top.dev {
+    border-radius: 20px;
+    font-size: 15pt;
+
+}
+
+.go-top > span {
+    display: none;
+}
+
+.go-top.dev > span {
+    display: block;
+}
+
+.go-top:hover {
+    background-color: #FFFFFFAA;
+}
+
+
 
 @media screen and (max-width: 800px) {
     .popup-image .popup-content {
