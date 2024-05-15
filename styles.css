@@ -81,6 +81,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: inherit;
+    max-width: inherit;
 }
 
 .projects-dot {
