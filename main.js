@@ -119,6 +119,10 @@ window.addEventListener('load', function() {
     
     });*/
 
+    this.document.querySelector('#contact-btn').addEventListener('click', function() {
+       goToProjet('contact');
+    });
+
 });
 
 function goToProjet (projet) {
