@@ -123,6 +123,53 @@ window.addEventListener('load', function() {
        goToProjet('contact');
     });
 
+
+    // Contact part
+
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    result.innerHTML = "Merci de patienter...";
+    result.style.opacity = "1";
+    document.querySelector('#submit-btn').disabled = true;
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.style.opacity = "0";
+                    setTimeout(() => {
+                        result.innerHTML = "Merci pour votre message ! Vous recevrez bientôt une réponse.";
+                        result.style.opacity = "1";
+                    }, 500);
+
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Oups... Une erreur est survenue. Merci de réessayer plus tard.";
+            })
+            .then(function() {
+                form.reset();
+                
+            });
+    });
+
 });
 
 function goToProjet (projet) {

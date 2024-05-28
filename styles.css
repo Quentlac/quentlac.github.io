@@ -129,6 +129,19 @@ body {
     color: white;
 }
 
+
+.right-banner {
+    max-width: 65%;
+}
+
+.project-timeline {
+    opacity: 70%;
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 5px 0px;
+    margin-bottom: 15px;
+}
+
 .images-list {
     display: flex;
     justify-content: center;
@@ -233,8 +246,10 @@ a {
 
 .banner h2 {
     width: fit-content;
-    max-width: 60%;
     font-weight: 800;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    max-width: 100%;
 }
 
 .techno {
