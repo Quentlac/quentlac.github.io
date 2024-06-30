@@ -58,6 +58,7 @@ body {
     justify-content: center;
     padding-bottom: 130px;
     padding-top: 50px;
+    color: black;
 }
 
 .intro h1 {
@@ -273,10 +274,11 @@ a {
 .social > a {
     margin-right: 5px;
     margin-bottom: 20px;
+    color: black;
 }
 
 #contact-btn {
-    background-color: #000;
+    background-color: black;
     color: white;
 }
 

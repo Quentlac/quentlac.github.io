@@ -28,19 +28,43 @@
         gtag('config', 'G-F7THHYS90F');
     </script>
 
+    <style>
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        #filterVideo {
+            position: fixed;
+            right: 0;
+            top: -100px;
+            min-width: 100%;
+            min-height: 150%;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(1px);
+
+        }
+
+    </style>
+
     <body>
         <div class="content intro">
             <img src="./images/profil.png" alt="Photo de Quentin LACOMBE" class="photo-profil">
-            <h1>QUENTIN LACOMBE</h1>
+            <h1 class="test">QUENTIN LACOMBE</h1>
             <h2>développeur logiciel</h2>
             <p>
                 Bonjour et bienvenue sur mon Portfolio professionnel. Ce site est dédié à la présentation de mon parcours et de mes projets.
             </p>
             <p>
-                Permettez-moi de me présenter : je suis actuellement étudiant en dernière année de BUT Informatique, en alternance au sein de l’entreprise Microoled. Dans le cadre de mes fonctions, je suis responsable du développement d’une application web intranet, visant à assurer la traçabilité des micro-écrans produits par Microoled.
+                Permettez-moi de me présenter : je suis actuellement étudiant en dernière année de BUT Informatique, en alternance au sein de l’entreprise Microoled. Dans le cadre de mes fonctions, je suis responsable du développement d’une application web intranet visant à assurer la traçabilité des micro-écrans produits par Microoled.
             </p>
             <p>
-                Je vous invite à explorer mon portfolio pour en savoir plus sur mes compétences et réalisations.
+                Je vous invite à explorer mon portfolio pour en savoir plus sur mes compétences et mes réalisations.
             </p>
             </p>
 
@@ -66,7 +90,7 @@
             <div class="banner">
                 <div class="banner-content">
                     <div class="right-banner">
-                        <h2>APPLICATION RÉSERVATION EN LIGNE DE STAGE DE VOILE</h2>
+                        <h2>APPLICATION RÉSERVATION EN LIGNE DE STAGES DE VOILE</h2>
                         <p class="project-timeline"><i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;2022 - 2024</p>
                     </div>
                     <div class="techno">
@@ -78,8 +102,8 @@
             </div>
             <div class="content"> 
                 <p>
-                    Développement d'une application web pour le club de voile YCBL permettant aux clients du club de réserver un stage pour l'été en ligne.
-                    L'application intègre une partie réservation dédié aux clients ainsi qu'une partie administration pour les employés du club afin de leur permettre de gérer les commandes et les offres proposées.
+                    Développement d'une application web pour le club de voile YCBL permettant aux clients de réserver en ligne un stage pour l'été.
+                    L'application possède une partie réservation dédiée aux clients ainsi qu'une partie administration pour les employés du club qui leur permet de gérer les commandes et les offres proposées.
                 </p>
                 <a href="https://ycbl-shop.devistorm.fr" target="_blank"><button class="action-button"><i class="fa-solid fa-link"></i> VOIR EN LIGNE</button></a>
             </div>
@@ -87,12 +111,13 @@
                 <img src="./images/ycbl1.png" data-description="Le client commence par choisir les semaines où il est disponible pour orienter la recherche de stages.">
                 <img src="./images/ycbl2.png" data-description="Affichage des stages sous forme de cartes avec toutes les informations nécessaires.">
                 <img src="./images/ycbl3.png" data-description="Interface d'administration présentant toutes les commandes des clients.">
+                <img src="./images/ycbl5.png" data-description="Statistiques du chiffre d'affaires et des performances du club en temps réel.">
                 <img src="./images/ycbl4.png" data-description="Interface d'administration permettant de visualiser une commande et d'effectuer des actions dessus.">
             </div>
             <div class="content">
 
                 <p>
-                    Pour le développement de cette application, j'ai tout d'abord étudiés les besoins nécessaires afin de rendre l'expérience utilisateur la plus agréable possible. D'un point de vue technique, il s'agit d'une application client / serveur avec une base de données PostgreSQL.
+                    Pour le développement de cette application, j'ai tout d'abord étudié les besoins nécessaires afin de rendre l'expérience utilisateur la plus agréable possible. D'un point de vue technique, il s'agit d'une application client / serveur avec une base de données PostgreSQL.
                     Les technologies utilisées sont React pour le front-end, NodeJS pour le back-end.
                 </p>
                 <p>
@@ -101,11 +126,11 @@
                 </p>
             
                 <p>
-                    L'application possède un système d'envoi de mails automatiques et de génération de facture afin de les envoyer aux clients après leur réservation.
+                    L'application possède un système d'envoi de mails automatiques et de génération de factures afin de les envoyer aux clients après leur réservation.
                 </p>
                 <p>
-                    Cette application intègre un système de stock et permet de moduler le nombre de places disponibles pour chaque stage et pour chaque semaines. Il est possible de créer des packages pour
-                    ajouter des options aux stages. Cela faisait partis des attentes du club de voile pour lequel j'ai travaillé.
+                    Cette application possède un système de stock qui permet de moduler le nombre de places disponibles pour chaque stage et pour chaque semaine. Il est possible de créer des packages pour
+                    ajouter des options aux stages. Cela faisait partie des attentes du club de voile pour lequel j'ai travaillé.
                 </p>
 
                 <p>Le site est aujourd'hui activement utilisé par le club de voile afin de remplir ses stages pour la saison estivale. Vous pouvez accéder au site en cliquant sur le bouton ci-dessus.</p>
@@ -132,12 +157,12 @@
             <div class="content">
                 
                 <p>
-                    Réalisation d'une Game Jam en Python organisé par l'IUT2 de Grenoble au sein de la promo de 3ème année de BUT Informatique. L'objectif était de créer un jeu vidéo en Python
-                    avec la bibliothèque pygame en 1 semaine par équipe de 4 personnes. Le thème imposé était <i>Maître de la gravité, l'histoire d'un robot.</i>
+                    Réalisation d'une Game Jam organisée par l'IUT2 de Grenoble au sein de la promo de 3ème année de BUT Informatique. L'objectif était de créer un jeu vidéo en Python
+                    avec la bibliothèque pygame, en une semaine, par équipe de 4 personnes. Le thème imposé était <i>Maître de la gravité, l'histoire d'un robot.</i>
                 </p>
                 <p>
-                    Nous avons donc réalisé le jeu que nous avons nommé "Gravity Escape".
-                    Il s'agit d'un jeu vidéo de type platforme où le joueur incarne un robot qui doit réussir différents niveau. Pour y parvenir il dispose d'un canon qui lui permet de tirer des projectiles pour modifier la gravité de certains blocs. 
+                    Nous avons donc réalisé ce jeu que nous avons nommé "Gravity Escape".
+                    Il s'agit d'un jeu vidéo de type platforme où le joueur incarne un robot qui doit réussir à s'échapper des différents niveaux. Pour y parvenir, il dispose d'un canon qui lui permet de tirer des projectiles pour modifier la gravité de certains blocs. 
                 </p>
                 <a href="https://github.com/Quentlac/GravityEscape" target="_blank"><button class="action-button"><i class="devicon-github-original"></i>VOIR SUR GITHUB</button></a>
             </div>
@@ -150,11 +175,11 @@
 
             <div class="content">
 
-                <p>J'étais chargé du développement de la physique du jeu. Je me suis donc occupé de créer le moteur physique en utilisant une approche orienté objet afin de faciliter le développement.</p>
+                <p>J'étais chargé du développement de la physique du jeu. Je me suis donc occupé de créer le moteur physique en utilisant une approche orientée objet afin de faciliter le développement.</p>
 
-                <p>Afin de travailler à plusieurs sur le projet, j'ai mis en place un dépôt Github permettant de collaborer sur le projet</p>
+                <p>Afin de travailler à plusieurs sur le projet, j'ai mis en place un dépôt Github permettant de collaborer sur le projet. </p>
 
-                <p>Ce projet nous a valu la seconde place à la Gamejam 2023 organisé par l'IUT.</p>
+                <p>Ce projet nous a valu la seconde place à la Gamejam 2023 organisée par l'IUT.</p>
                 
             </div>
         </div>
@@ -175,8 +200,8 @@
             <div class="content">
                 
                 <p>
-                    Dans le cadre d'un projet personnel, j'ai réalisé une application mobile de type réseau social nommé "Cheerland". L'objectif était de créer une application permettant de partager du
-                    contenu de manière innovante et originale. Le principe consiste en une map infinie sur laquelle les utilisateurs peuvent se déplacer
+                    Dans le cadre d'un projet personnel, j'ai réalisé une application mobile de type réseau social nommée "Cheerland". L'objectif était de créer une application permettant de partager du
+                    contenu de manière innovante et originale. Le principe consiste en une map infinie sur laquelle les utilisateurs peuvent se déplacer,
                     un peu comme sur Google Maps. Cette "map" est de base vierge et n'est qu'une grille vide. Les utilisateurs peuvent y ajouter des éléments comme des messages ou même des photos. Les autres utilisateurs peuvent alors voir ces éléments en se déplaçant sur la map et y réagir directement.
                 </p>
 
@@ -194,13 +219,13 @@
             </div>
 
             <div class="content">
-                <p>L'application mobile était conçu à la fois pour Android et iOS grâce à la technologie React Native. Pour le côté backend, j'ai
+                <p>L'application mobile était conçue à la fois pour Android et iOS grâce à la technologie React Native. Pour le côté backend, j'ai
                     utilisé PHP pour créer une API avec laquelle l'application communique pour récupérer les données à afficher sur la map.
                 </p>
 
                 <p>
-                    J'ai également mis en place un système de notifications push pour informer les utilisateurs des réponses d'autres utilisateurs à leur posts (nommé cheers). Pour cela, j'ai utlisé le
-                    framework expo pour React Native qui permet de gérer les notifications push.
+                    J'ai également mis en place un système de notifications push pour informer les utilisateurs des réponses d'autres utilisateurs à leur posts (nommés cheers). Pour cela, j'ai utlisé l'outil
+                    expo pour le framework React Native qui permet de gérer les notifications push.
                 </p>
             </div>
 
@@ -225,9 +250,9 @@
                 <p>
                     Dans le cadre d'un stage de 12 semaines dans l'entreprise Jay electronique du groupe Conductix, j'ai contribué
                     au développement d'un intranet ayant pour objectif d'améliorer la gestion de la production de radiocommandes
-                    industrielles. L'outil permet d'effectuer différentes tâches allant de la planification de la production à la
-                    gestion des incidents. Elle permet également de suivre en temps réel l'avancement de la production et ainsi aider
-                    les collaborateurs de l'entreprise à prendre les meilleures décisions qu'il soit.
+                    industrielles. L'outil permet d'effectuer différentes tâches, allant de la planification de la production à la
+                    gestion des incidents. Elle permet également de suivre en temps réel l'avancement de la production et ainsi d'aider
+                    les collaborateurs de l'entreprise à prendre les meilleures décisions possibles.
                 </p>
 
                 
@@ -243,9 +268,9 @@
 
             <div class="content">
                 <p>
-                    Ce stage a été l'opportunité de découvrir à la fois le monde de l'entreprise mais aussi d'acquérir de nouvelles
+                    Ce stage a été l'opportunité de découvrir à la fois le monde de l'entreprise et d'acquérir de nouvelles
                     compétences en développement web. J'ai ainsi pu apprendre à utiliser la technologie ASP.net pour le développement
-                    web ainsi que l'utilisation d'une base de données SQL Server à travers l'ORM Entity Framework.
+                    web ainsi qu'une base de données SQL Server à travers l'ORM Entity Framework.
                 </p>
 
             </div>
